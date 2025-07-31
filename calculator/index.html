@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8" />
+        <meta name="viewport" content="width=device width , initial-scale=1.0" />
+        <title>My calculator</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="container mt-5">
+            <div class="calculator-box bg-light p-3 rounded">
+                <input type="text" id="calc-display" class="form-control mb-3 text-end" readonly>
+                <div class="button-container d-grid gap-2">
+
+                    <!--First Row-->
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-secondary flex-fill" data-key="7">7</button>
+                        <button class="btn btn-secondary flex-fill" data-key="8">8</button>
+                        <button class="btn btn-secondary flex-fill" data-key="9">9</button>
+                        <button class="btn btn-warning flex-fill" data-key="/">÷</button> 
+                    </div>
+
+                    <!--Second Row-->
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-secondary flex-fill" data-key="4">4</button>
+                        <button class="btn btn-secondary flex-fill" data-key="5">5</button>
+                        <button class="btn btn-secondary flex-fill" data-key="6">6</button>
+                        <button class="btn btn-warning flex-fill" data-key="*">x</button> 
+                    </div>
+
+                    <!--Third Row-->
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-secondary flex-fill" data-key="1">1</button>
+                        <button class="btn btn-secondary flex-fill" data-key="2">2</button>
+                        <button class="btn btn-secondary flex-fill" data-key="3">3</button>
+                        <button class="btn btn-warning flex-fill" data-key="-">-</button> 
+                    </div>
+
+                    <!--Fourth Row-->
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-secondary flex-fill" data-key="0">0</button>
+                         <button class="btn btn-warning flex-fill" id="btn-percent">%</button>
+                         <button class="btn btn-warning flex-fill" id="btn-square-root">√</button>
+                        <button class="btn btn-warning flex-fill" data-key="+">+</button> 
+                    </div>
+
+                    <!--Fifth Row-->
+                    <div class="d-flex gap-2">
+                       <button class="btn btn-success flex-fill" id="btn-clear">AC</button>
+                        <button class="btn btn-warning flex-fill" data-key=".">.</button>
+                        <button class="btn btn-success flex-fill" id="btn-equals">=</button> 
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
